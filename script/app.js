@@ -1,6 +1,6 @@
-const image = document.querySelector("#image");
-    const texte1 = document.querySelector("#texte1");
-    const texte2 = document.querySelector("#texte2");
+const photo = document.querySelector("#photo");
+const paragraphe1 = document.querySelector("#paragraphe1");
+const paragraphe2 = document.querySelector("#paragraphe2");
 
     const images = [
     "./asset/image/image1.png",
@@ -25,19 +25,19 @@ const descriptions = [
 
 let i = 0;
 
-function Next() {
+function Suivant() {
     console.log("Tout va bien")
-
-
 
     i++;
 
-    if (i >= images.length) {
+     if (i >= images.length) {
         i = 0;
     }
 
 
-    image.src = images[i];
-    texte1.textContent = descriptions[i].p1;
-    texte2.textContent = descriptions[i].p2;
+    photo.src = images[i];
+    paragraphe1.textContent = descriptions[i].p1;
+    paragraphe2.textContent = descriptions[i].p2;
+
+   
 }
