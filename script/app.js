@@ -26,7 +26,7 @@ const descriptions = [
 let i = 0;
 
 function Suivant() {
-    console.log("Tout va bien")
+    console.log("Tout fonctionne correctement")
 
     i++;
 
@@ -38,6 +38,4 @@ function Suivant() {
     photo.src = images[i];
     paragraphe1.textContent = descriptions[i].p1;
     paragraphe2.textContent = descriptions[i].p2;
-
-   
 }
